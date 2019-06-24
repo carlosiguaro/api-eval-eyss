@@ -17,7 +17,7 @@ HEADERS despues de autenticarse:
     * name
     * email
     * password
-    * password_cornfirmation
+    * password_confirmation
 
 -----------------------------------------------------------------
 - DATOS PARA EL CRUD DE CATEGORIA:
