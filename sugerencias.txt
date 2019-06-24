@@ -1,0 +1,30 @@
+API FARMACIA Evaluacion EYSS
+
+-----------------------------------------------------------------
+HEADERS antes para: - registro: api/auth/signup     - inicio de session:  api/auth/login
+
+    Content-Type:       application/json
+    X-Requested-With:   XMLHttpRequest
+
+-----------------------------------------------------------------
+HEADERS despues de autenticarse:
+
+    Authorization:      Bearer + (token de session)
+
+
+-----------------------------------------------------------------
+- DATOS PARA EL REGISTRO DE USUARIO
+    * name
+    * email
+    * password
+    * password_cornfirmation
+
+-----------------------------------------------------------------
+- RESTABLECER LA BASE DE DATOS
+php artisan miagrate:fresh
+
+- TOKENS
+php artisan passport:install --force
+
+- SEEDERS
+php artisan db:seed
