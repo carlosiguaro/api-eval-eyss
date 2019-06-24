@@ -1,7 +1,7 @@
 API FARMACIA Evaluacion EYSS
 
 -----------------------------------------------------------------
-HEADERS antes para: - registro: api/auth/signup     - inicio de session:  api/auth/login
+HEADERS antes de autenticarse: - registro: ... /api/auth/signup     - inicio de session:  ... /api/auth/login
 
     Content-Type:       application/json
     X-Requested-With:   XMLHttpRequest
@@ -20,6 +20,17 @@ HEADERS despues de autenticarse:
     * password_cornfirmation
 
 -----------------------------------------------------------------
+- DATOS PARA EL CRUD DE CATEGORIA:
+    *designacion
+
+------------------------------------------------------------------
+-  DATOS PARA EL CRUD DE PRODUCTOS
+    *nombre
+    *descripcion
+    *categoria
+
+
+____________________________________________________________________
 - RESTABLECER LA BASE DE DATOS
 php artisan miagrate:fresh
 
